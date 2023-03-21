@@ -1,0 +1,26 @@
+.wrapper {
+    padding: 0 0 8px 0;
+}
+
+.menu-item { 
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+    color: var(--text-color);
+
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+
+    &.active { 
+        color: var(--primary-color);
+    }
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 8px;
+    line-height: 2.5rem;
+}

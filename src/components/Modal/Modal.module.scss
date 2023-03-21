@@ -1,0 +1,11 @@
+div[data-popup]  {
+    background: rgba(0, 0, 0, 0.5);
+
+    .modal {
+        background-color: #fff;
+        border-radius: 8px;
+        max-height: 693px;
+        height: 80%;
+        overflow: hidden;
+    } 
+}

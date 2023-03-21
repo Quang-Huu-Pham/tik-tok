@@ -1,0 +1,68 @@
+.wrapper { 
+    padding: 12px 20px 20px 20px;
+}
+
+.header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body {
+    margin-top: 12px;
+
+    & .title {
+        display: flex;
+    }
+
+    & .username {
+        color: var(--text-color);
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 2.2rem;
+        max-width: 260px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    & .icon {
+        width: 14px;
+        height: 14px;
+        line-height: 1.4rem;
+        margin-left: 4px;
+        color: var(--secondary-color);
+    }
+
+    & .subtitle { 
+        color: #161823;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 2rem;
+        max-width: 260px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .analytics {
+        margin-top: 8px;
+    }
+
+    .value {
+        font-weight: 700;
+        margin-right: 6px;
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
+    .value ~ .value {
+        margin-left: 12px;
+    }
+
+    .desc {
+        color: #161823bf;
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+}

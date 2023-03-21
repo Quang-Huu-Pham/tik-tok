@@ -1,0 +1,103 @@
+.container {
+    max-width: 692px;
+    max-height: 100vh;
+    overflow-y: scroll;
+    padding-top: 24px;
+
+    & .infinite-scroll-component::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.wrapper{
+    width: 100%;
+    width: 692px;
+    float: right;
+    
+    & .player {
+        display: flex;
+        padding-block: 20px;
+
+        &-nickname { 
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        &-avatar {
+            margin-right: 12px;
+        }
+
+        &-content {
+            width: 624px;
+        }
+
+        &-info {
+            position: relative;
+
+            & .btn-follow {
+                position: absolute;
+                top: 8px;
+                right: 0;
+            }
+        }
+
+        &-music {
+            display: flex;
+            align-items: center;
+
+            & svg {
+                margin-right: 5px;
+            }
+        }
+
+        &-video {
+            display: flex;
+            padding-block: 20px;
+            width: max-content;
+            max-width: calc(450px + ((100vw - 768px) / 1152) * 100);
+            height: calc(450px + (100vw - 768px) / 1152 * 100);
+        }
+
+        &-action {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 8px;
+        }
+    }
+
+    & .video, .player-thumb { 
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+
+    & .btn-action {
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    & .icon{
+        width: 48px;
+        height: 48px;
+        border-radius: 100rem;
+        background-color: rgba(22, 24, 35, 0.06);
+        color: rgb(22, 24, 35);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+    
+    & .quantity{
+        color: rgba(22, 24, 35, 0.75);
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+    }
+}
